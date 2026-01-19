@@ -1,5 +1,6 @@
 package com.askomdch.steps;
 
+import com.askomdch.domainobjects.Product;
 import com.askomdch.factory.DriverFactory;
 import com.askomdch.pages.CartPage;
 import com.askomdch.pages.StorePage;
@@ -18,15 +19,15 @@ public class AddToCartSteps {
         new StorePage(driver).load("https://askomdch.com/store");
     }
 
-    @When("I add a {string} to the cart")
-    public void iAddAToTheCart(String productName) {
-        new StorePage(driver).addToCart(productName);
+    @When("I add a {product} to the cart")
+    public void iAddAToTheCart(Product product) {
+        new StorePage(driver).addToCart(product.getName());
     }
 
-    @Then("I should see {int} {string}in the cart")
-    public void iShouldSeeInTheCart(int quantity, String productName) {
+    @Then("I should see {int} {product}in the cart")
+    public void iShouldSeeInTheCart(int quantity, Product product) {
         CartPage cartPage= new CartPage(driver);
-        Assert.assertEquals(productName, cartPage.getProductName());
+        Assert.assertEquals(product.getName(), cartPage.getProductName());
         Assert.assertEquals(quantity, cartPage.getProductQuantity());
     }
 }
