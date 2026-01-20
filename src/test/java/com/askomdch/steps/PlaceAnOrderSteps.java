@@ -14,7 +14,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class PlaceAnOrderSteps {
-
     WebDriver driver= Hooks.driver;
     private BillingDetails billingDetails;
 

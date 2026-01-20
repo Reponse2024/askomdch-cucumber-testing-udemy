@@ -14,7 +14,6 @@ public class CartPage extends BasePage{
     @FindBy(css="input[type=\"number\"]") private WebElement productQuantityFld;
     @FindBy(css=".checkout-button") private WebElement proceedToCheckoutBtn;
 
-
     public CartPage(WebDriver driver) {
         super(driver);
     }

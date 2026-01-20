@@ -81,4 +81,5 @@ public class BillingDetails {
     public void setBillingEmail(String billingEmail) {
         this.billingEmail = billingEmail;
     }
+
 }
