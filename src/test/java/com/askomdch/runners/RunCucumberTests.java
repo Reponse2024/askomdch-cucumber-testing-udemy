@@ -17,7 +17,6 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         },
         dryRun= true,
         snippets=CAMELCASE
-
 )
 public class RunCucumberTests {
 }

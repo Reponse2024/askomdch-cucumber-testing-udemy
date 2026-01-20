@@ -41,7 +41,6 @@ public class CheckoutPage extends BasePage {
         e.sendKeys(billingFirstName);
         return this;
     }
-
     public CheckoutPage enterBillingLastName(String billingLastName) {
         WebElement e = wait.until(ExpectedConditions.visibilityOf(billingLastNameFld));
         e.clear();
