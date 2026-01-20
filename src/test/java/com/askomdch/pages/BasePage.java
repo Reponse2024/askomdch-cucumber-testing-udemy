@@ -12,5 +12,4 @@ public class BasePage {
         driver.get(url);
     }
     protected WebDriver driver;
-    protected WebDriver wait;
 }
