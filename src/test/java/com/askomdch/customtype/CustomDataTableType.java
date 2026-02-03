@@ -2,7 +2,6 @@ package com.askomdch.customtype;
 
 import com.askomdch.domainobjects.BillingDetails;
 import io.cucumber.java.DataTableType;
-
 import java.util.Map;
 
 public class CustomDataTableType {
